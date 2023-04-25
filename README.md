@@ -28,3 +28,32 @@ Master ARIMA model for forcasting
   - AR: Auto Regressive model
   - MA: Moving Average model
   - ARMA: AR + MA
+  - ARIMA
+- Autocorrelation
+  - ACF
+  - PACF
+- AIC and BIC
+  - AIC: Akaike information criterion
+  - BIC - Bayesian information criterion
+  - Lower AIC/BIC - better model
+  - AIC/BIC like Simple models with lower order
+  - BIC favors simpler models than AIC
+- Box-Jenkins
+  - Identification
+    - Is the time series stationary?
+    - What differencing will make it stationary
+    - What transforms will make it stationary
+    - What values of p and q are the most promissing
+  - Estimation
+    - Use the data to train the model coefficients
+    - Done for us using model.fit()
+    - Choose between models using AIC and BIC
+  - Model diagnostic
+    - Are the residual uncorrelated
+    - Are residual normally distributed
+      - results.plot_diagnostics()
+      - results.summary()
+  - Seasonal time series
+    - Seasonal data
+      - Has predictable and repeated patterns
+      - Repeat after any amount of time
